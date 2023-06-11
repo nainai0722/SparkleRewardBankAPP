@@ -9,7 +9,34 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                Spacer()
+                NavigationLink(destination: ChallengeAchievementsView().navigationTitle("きょうはとりくめたかな？")){
+                    // TODO: ボタンっぽい装飾にする
+                    Text("はじめる")
+                        
+                }
+                Spacer()
+                HStack{
+                    // TODO: 左寄せかつボタンサイズ調整タップ時アニメーション
+                    NavigationLink(destination: BasicSettingView().navigationTitle("もくひょうをきめよう")){
+                        Image(systemName:"rectangle.and.pencil.and.ellipsis")
+                    }
+                    Spacer()
+                    // TODO: 左寄せかつボタンサイズ調整タップ時アニメーション
+                    NavigationLink(destination: ParentSettingView().navigationTitle("保護者が設定する画面")){
+                        Image(systemName:"lock.doc")
+                    }
+                }
+                    
+                
+            }
+            .navigationTitle("")
+            .padding()
+            
+        }
     }
 }
 

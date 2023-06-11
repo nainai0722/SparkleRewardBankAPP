@@ -11,6 +11,12 @@
 		F86D699A2A335BAC00322ADD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69992A335BAC00322ADD /* ContentView.swift */; };
 		F86D699C2A335BAE00322ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86D699B2A335BAE00322ADD /* Assets.xcassets */; };
 		F86D699F2A335BAE00322ADD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86D699E2A335BAE00322ADD /* Preview Assets.xcassets */; };
+		F86D69A62A335C0300322ADD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69A52A335C0300322ADD /* HomeView.swift */; };
+		F86D69A82A335C2500322ADD /* BasicSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69A72A335C2500322ADD /* BasicSettingView.swift */; };
+		F86D69AA2A3381FD00322ADD /* ChallengeAchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69A92A3381FD00322ADD /* ChallengeAchievementsView.swift */; };
+		F86D69AC2A34B12A00322ADD /* ParentSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69AB2A34B12A00322ADD /* ParentSettingView.swift */; };
+		F86D69AE2A36194500322ADD /* BasicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69AD2A36194500322ADD /* BasicData.swift */; };
+		F86D69B02A36195000322ADD /* ParentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69AF2A36195000322ADD /* ParentData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		F86D69992A335BAC00322ADD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F86D699B2A335BAE00322ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F86D699E2A335BAE00322ADD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F86D69A52A335C0300322ADD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F86D69A72A335C2500322ADD /* BasicSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSettingView.swift; sourceTree = "<group>"; };
+		F86D69A92A3381FD00322ADD /* ChallengeAchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeAchievementsView.swift; sourceTree = "<group>"; };
+		F86D69AB2A34B12A00322ADD /* ParentSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentSettingView.swift; sourceTree = "<group>"; };
+		F86D69AD2A36194500322ADD /* BasicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicData.swift; sourceTree = "<group>"; };
+		F86D69AF2A36195000322ADD /* ParentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				F86D69972A335BAC00322ADD /* SparkleRewardBankAPPApp.swift */,
 				F86D69992A335BAC00322ADD /* ContentView.swift */,
+				F86D69A52A335C0300322ADD /* HomeView.swift */,
+				F86D69AD2A36194500322ADD /* BasicData.swift */,
+				F86D69AF2A36195000322ADD /* ParentData.swift */,
+				F86D69A72A335C2500322ADD /* BasicSettingView.swift */,
+				F86D69AB2A34B12A00322ADD /* ParentSettingView.swift */,
+				F86D69A92A3381FD00322ADD /* ChallengeAchievementsView.swift */,
 				F86D699B2A335BAE00322ADD /* Assets.xcassets */,
 				F86D699D2A335BAE00322ADD /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86D69A82A335C2500322ADD /* BasicSettingView.swift in Sources */,
+				F86D69AE2A36194500322ADD /* BasicData.swift in Sources */,
+				F86D69AC2A34B12A00322ADD /* ParentSettingView.swift in Sources */,
+				F86D69AA2A3381FD00322ADD /* ChallengeAchievementsView.swift in Sources */,
+				F86D69A62A335C0300322ADD /* HomeView.swift in Sources */,
 				F86D699A2A335BAC00322ADD /* ContentView.swift in Sources */,
 				F86D69982A335BAC00322ADD /* SparkleRewardBankAPPApp.swift in Sources */,
+				F86D69B02A36195000322ADD /* ParentData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
