@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var basicData: BasicData
     var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         NavigationStack{
             VStack{
                 Spacer()
@@ -30,8 +30,6 @@ struct HomeView: View {
                         Image(systemName:"lock.doc")
                     }
                 }
-                    
-                
             }
             .navigationTitle("")
             .padding()
@@ -43,5 +41,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+//            .environmentObject(BasicData())
     }
 }

@@ -7,14 +7,28 @@
 
 import SwiftUI
 
-struct ParentData: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct ParentData: Identifiable {
+    let id = UUID()
+    var name: String
+    var Goal:[GoalItem]
+    var RewardsSt: [RewardItem]
+    var passCode: Int
+    
+    init(name: String, Goal: [GoalItem], RewardsSt: [RewardItem], passsCode: Int) {
+        self.name = name
+        self.Goal = Goal
+        self.RewardsSt = RewardsSt
+        self.passCode = passsCode
     }
 }
 
-struct ParentData_Previews: PreviewProvider {
-    static var previews: some View {
-        ParentData()
-    }
+struct GoalItem: Identifiable {
+    let id: UUID = UUID()
+    let goal: String
 }
+
+struct RewardItem: Identifiable {
+    let id: UUID = UUID()
+    let reward: String
+}
+

@@ -17,6 +17,7 @@
 		F86D69AC2A34B12A00322ADD /* ParentSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69AB2A34B12A00322ADD /* ParentSettingView.swift */; };
 		F86D69AE2A36194500322ADD /* BasicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69AD2A36194500322ADD /* BasicData.swift */; };
 		F86D69B02A36195000322ADD /* ParentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D69AF2A36195000322ADD /* ParentData.swift */; };
+		F8ABBFC72A3DF46D009AD61B /* PersonalRewardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ABBFC62A3DF46D009AD61B /* PersonalRewardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F86D69AB2A34B12A00322ADD /* ParentSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentSettingView.swift; sourceTree = "<group>"; };
 		F86D69AD2A36194500322ADD /* BasicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicData.swift; sourceTree = "<group>"; };
 		F86D69AF2A36195000322ADD /* ParentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentData.swift; sourceTree = "<group>"; };
+		F8ABBFC62A3DF46D009AD61B /* PersonalRewardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalRewardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 				F86D69972A335BAC00322ADD /* SparkleRewardBankAPPApp.swift */,
 				F86D69992A335BAC00322ADD /* ContentView.swift */,
 				F86D69A52A335C0300322ADD /* HomeView.swift */,
-				F86D69AD2A36194500322ADD /* BasicData.swift */,
 				F86D69AF2A36195000322ADD /* ParentData.swift */,
+				F86D69AD2A36194500322ADD /* BasicData.swift */,
+				F8ABBFC62A3DF46D009AD61B /* PersonalRewardData.swift */,
 				F86D69A72A335C2500322ADD /* BasicSettingView.swift */,
 				F86D69AB2A34B12A00322ADD /* ParentSettingView.swift */,
 				F86D69A92A3381FD00322ADD /* ChallengeAchievementsView.swift */,
@@ -159,6 +162,7 @@
 				F86D69AE2A36194500322ADD /* BasicData.swift in Sources */,
 				F86D69AC2A34B12A00322ADD /* ParentSettingView.swift in Sources */,
 				F86D69AA2A3381FD00322ADD /* ChallengeAchievementsView.swift in Sources */,
+				F8ABBFC72A3DF46D009AD61B /* PersonalRewardData.swift in Sources */,
 				F86D69A62A335C0300322ADD /* HomeView.swift in Sources */,
 				F86D699A2A335BAC00322ADD /* ContentView.swift in Sources */,
 				F86D69982A335BAC00322ADD /* SparkleRewardBankAPPApp.swift in Sources */,
@@ -299,6 +303,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +333,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

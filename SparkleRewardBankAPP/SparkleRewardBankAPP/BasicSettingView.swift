@@ -8,26 +8,30 @@
 import SwiftUI
 
 struct BasicSettingView: View {
-    @State private var name = ""
+//    @State private var name = ""
     @State private var selectedRoleIndex = 0
-    @State private var purposeSelectItems = ["早起きを頑張る", "あるいて学校に行く", "ランドセルをきめたばしょにかたづける", "時間をきめてご飯を食べ終わる"]
-    @State private var presentSelectItems = ["スシローに行ける", "プールに行ける", "500円もらえる", "マンガをかってもらえる"]
+//    @State private var purposeSelectItems = ["早起きを頑張る", "あるいて学校に行く", "ランドセルをきめたばしょにかたづける", "時間をきめてご飯を食べ終わる"]
+//    @State private var presentSelectItems = ["スシローに行ける", "プールに行ける", "500円もらえる", "マンガをかってもらえる"]
+
+    @EnvironmentObject  var basicData: BasicData
+
+
     var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         VStack (alignment:.leading, spacing: 20) {
             HStack{
                 Text("なまえ")
-                TextField("なまえ", text: $name)
+                TextField("なまえ", text: $basicData.name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
             }
             .padding()
-            
+
+        
             HStack{
                 Text("がんばることをえらぶ")
-                Picker("がんばることをえらぶ", selection: $selectedRoleIndex) {
-                    ForEach(0..<purposeSelectItems.count) { index in
-                        Text(purposeSelectItems[index])
+                Picker("がんばることをえらぶ", selection: $basicData.purposeSelectItems[0]) {
+                    ForEach(basicData.purposeSelectItems, id: \.self) { item in
+                        Text(item)
                     }
                 }
             }
@@ -45,9 +49,9 @@ struct BasicSettingView: View {
             .padding()
             HStack{
                 Text("とくてんをえらぶ")
-                Picker("とくてんをえらぶ", selection: $selectedRoleIndex) {
-                    ForEach(0..<presentSelectItems.count) { index in
-                        Text(presentSelectItems[index])
+                Picker("とくてんをえらぶ", selection: $basicData.presentSelectItems[0]) {
+                    ForEach(basicData.presentSelectItems, id: \.self) { item in
+                        Text(item)
                     }
                 }
             }
